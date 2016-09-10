@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\structures">
+      <UniqueIdentifier>{ea6713c5-0cb7-47a0-9445-24a236210b56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\cocos">
+      <UniqueIdentifier>{07f0ecb6-dc99-4ba0-a022-757f473aad2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\headers">
+      <UniqueIdentifier>{b2ba17bd-ee57-4ed0-abf6-cf934d44ee76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pch">
+      <UniqueIdentifier>{d19188b2-7226-4936-be71-1ca09fdf934a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Map.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\physics.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\graphics.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\body_creator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\map_physics.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GLES-Render.cpp">
+      <Filter>src\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\B2DebugDrawLayer.cpp">
+      <Filter>src\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\app_delegate.cpp">
+      <Filter>src\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\level_scene.cpp">
+      <Filter>src\cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\drag_drop.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PCH.cpp">
+      <Filter>src\pch</Filter>
+    </ClCompile>
+    <ClCompile Include="character.h">
+      <Filter>src\headers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GLES-Render.h">
+      <Filter>src\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\B2DebugDrawLayer.h">
+      <Filter>src\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\app_delegate.h">
+      <Filter>src\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\level_scene.h">
+      <Filter>src\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\drag_drop.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\map.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\graphics.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\body_creator.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\map_physics.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\physics.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PCH.h">
+      <Filter>src\pch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\types.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\globals.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\consts.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\path.h">
+      <Filter>src\headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

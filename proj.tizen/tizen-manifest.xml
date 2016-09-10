@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="2.3" package="antek" version="1.0.0">
+    <ui-application appid="antek" exec="hellocpp" multiple="false" nodisplay="false" taskmanage="true" type="capp">
+        <label>antek</label>
+        <icon>antek.png</icon>
+    </ui-application>
+</manifest>
