@@ -24,7 +24,7 @@ void create_clipping()
 	auto h = min(levelSize.height, MAX_LVL_HEIGHT);
 
 	theFog = DrawNode::create();
-	theFog->drawSolidRect(Vec2(0, 0), Vec2(w/2, h/2), Color4F(0.2f, 0.2f, 0.2f, 0.2f));
+	theFog->drawSolidRect(Vec2(0, 0), Vec2(w, h), Color4F(0.0f, 0.0f, 0.0f, 0.0f));
 
 	clip = ClippingNode::create(theFog);
 	clip->setContentSize(Size(w, h));
@@ -33,13 +33,23 @@ void create_clipping()
 		(levelSize.height - h) / 2
 		);
 
-	//RenderTexture* renderTexture = RenderTexture::create(w, h,
-	//	Texture2D::PixelFormat::RGBA8888,
-	//	GL_DEPTH24_STENCIL8); // configure for clipping node
+	auto sprite = Sprite::createWithSpriteFrameName("fog");
+	sprite->setPosition(150, 150);
 
-	//renderTexture->beginWithClear(0, 0, 0, 0, 1.0f);
-	//clip->Node::visit();
+	auto sprite2 = Sprite::createWithSpriteFrameName("fog");
+	sprite2->setPosition(250, 50);
+
+	
+	//RenderTexture* renderTexture = RenderTexture::create(levelSize.width, levelSize.height, Texture2D::PixelFormat::RGBA8888); // configure for clipping node
+
+	auto ll = LayerColor::create(Color4B(0, 0, 0, 255), theMap->getContentSize().width, theMap->getContentSize().height);
+	//renderTexture->beginWithClear(0.0f, 0.0f, 0.0f, 1.0f);
+	sprite->setBlendFunc({ GL_ZERO, GL_SRC_ALPHA});
+	sprite2->setBlendFunc({ GL_SRC_ALPHA, GL_ZERO });
+	ll->addChild(sprite);
+	ll->addChild(sprite2);
 	//renderTexture->end();
+	theMap->addChild(ll, 999);
 }
 
 void scroll_map(float dx, float dy)

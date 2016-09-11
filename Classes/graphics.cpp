@@ -11,6 +11,7 @@ void init_graphics()
 	theAnimationCache = AnimationCache::getInstance();
 
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("res/characters.plist");
+	SpriteFrameCache::getInstance()->addSpriteFrame(SpriteFrame::create("res/fog.png", Rect(0, 0, 350 / theDirector->getContentScaleFactor(), 350 / theDirector->getContentScaleFactor())), "fog");
 	theAnimationCache->addAnimationsWithFile("res/character_animations.plist");
 }
 
