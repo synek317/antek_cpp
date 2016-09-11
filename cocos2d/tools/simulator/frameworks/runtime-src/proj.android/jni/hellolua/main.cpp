@@ -1,4 +1,4 @@
-#include "AppDelegate.h"
+#include "app_delegate.h"
 #include "cocos2d.h"
 #include "platform/android/jni/JniHelper.h"
 #include <jni.h>
@@ -28,7 +28,7 @@ extern "C"
 #if (COCOS2D_DEBUG > 0) && (CC_CODE_IDE_DEBUG_SUPPORT > 0)
         return true;
 #else
-        return false;    
+        return false;
 #endif
 	}
 }

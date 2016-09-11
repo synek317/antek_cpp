@@ -215,7 +215,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\..\Classes\app_delegate.h" />
     <ClInclude Include="..\..\Classes\HelloWorldScene.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -239,7 +239,7 @@
     <None Include="antek_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\..\Classes\app_delegate.cpp" />
     <ClCompile Include="..\..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="App.xaml.cpp">
       <DependentUpon>App.xaml</DependentUpon>

@@ -1,4 +1,4 @@
-#include "AppDelegate.h"
+#include "app_delegate.h"
 #include "CCLuaEngine.h"
 #include "SimpleAudioEngine.h"
 #include "cocos2d.h"
@@ -44,14 +44,14 @@ bool AppDelegate::applicationDidFinishLaunching()
 {
     // set default FPS
     Director::getInstance()->setAnimationInterval(1.0 / 60.0f);
-    
+
     auto runtimeEngine = RuntimeEngine::getInstance();
     runtimeEngine->setEventTrackingEnable(true);
     runtimeEngine->addRuntime(RuntimeLuaImpl::create(), kRuntimeEngineLua);
     auto jsRuntime = RuntimeJsImpl::create();
     runtimeEngine->addRuntime(jsRuntime, kRuntimeEngineJs);
     runtimeEngine->start();
-    
+
     // js need special debug port
     if (runtimeEngine->getProjectConfig().getDebuggerType() != kCCRuntimeDebuggerNone)
     {

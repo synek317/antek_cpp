@@ -17,7 +17,7 @@
 */
 
 #include "Cocos2dRenderer.h"
-#include "AppDelegate.h"
+#include "app_delegate.h"
 #include "platform/winrt/CCGLViewImpl-winrt.h"
 #include "platform/CCApplication.h"
 #include "renderer/CCTextureCache.h"

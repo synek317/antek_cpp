@@ -113,6 +113,7 @@ include_directories(
   ${COCOS2D_ROOT}/cocos
   ${COCOS2D_ROOT}/cocos/platform
   ${COCOS2D_ROOT}/cocos/audio/include/
+  ${COCOS2D_ROOT}/external
   Classes
 )
 if ( WIN32 )
@@ -123,16 +124,47 @@ if ( WIN32 )
 endif( WIN32 )
 
 set(GAME_SRC
-  Classes/AppDelegate.cpp
-  Classes/HelloWorldScene.cpp
+  Classes/app_delegate.cpp
+  Classes/B2DebugDrawLayer.cpp
+  Classes/body_creator.cpp
+  Classes/drag_drop.cpp
+  Classes/GLES-Render.cpp
+  Classes/graphics.cpp
+  Classes/level_scene.cpp
+  Classes/map.cpp
+  Classes/map_physics.cpp
+  Classes/PCH.cpp
+  Classes/physics.cpp
+  Classes/utils.cpp
+
   ${PLATFORM_SPECIFIC_SRC}
 )
 
 set(GAME_HEADERS
-  Classes/AppDelegate.h
-  Classes/HelloWorldScene.h
+  Classes/app_delegate.h
+  Classes/B2DebugDrawLayer.h
+  Classes/body_creator.h
+  Classes/common.h
+  Classes/consts.h
+  Classes/drag_drop.h
+  Classes/GLES-Render.h
+  Classes/globals.h
+  Classes/graphics.h
+  Classes/level_scene.h
+  Classes/map.h
+  Classes/map_physics.h
+  Classes/path.h
+  Classes/PCH.h
+  Classes/physics.h
+  Classes/types.h
+  Classes/utils.h
+
   ${PLATFORM_SPECIFIC_HEADERS}
 )
+
+
+option(USE_CHIPMUNK "Use chipmunk for physics library" OFF)
+option(USE_BOX2D "Use box2d for physics library" ON)
 
 if( ANDROID )
     add_library(${APP_NAME} SHARED ${GAME_SRC} ${GAME_HEADERS})
@@ -143,7 +175,7 @@ else()
     add_executable(${APP_NAME} ${GAME_SRC} ${GAME_HEADERS})
 endif()
 
-target_link_libraries(${APP_NAME} cocos2d)
+target_link_libraries(${APP_NAME} cocos2d box2d)
 
 set(APP_BIN_DIR "${CMAKE_BINARY_DIR}/bin")
 

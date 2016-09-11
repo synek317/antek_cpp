@@ -24,7 +24,7 @@
 
 #import "AppController.h"
 #import "cocos2d.h"
-#import "AppDelegate.h"
+#import "app_delegate.h"
 #import "RootViewController.h"
 
 @implementation AppController
@@ -37,7 +37,7 @@
 // cocos2d application instance
 static AppDelegate s_sharedApplication;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
     // Add the view controller's view to the window and display.
@@ -46,7 +46,7 @@ static AppDelegate s_sharedApplication;
     // Use RootViewController to manage CCEAGLView
     _viewController = [[RootViewController alloc]init];
     _viewController.wantsFullScreenLayout = YES;
-    
+
 
     // Set RootViewController to window
     if ( [[UIDevice currentDevice].systemVersion floatValue] < 6.0)
@@ -88,7 +88,7 @@ static AppDelegate s_sharedApplication;
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
      If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
      */
     cocos2d::Application::getInstance()->applicationDidEnterBackground();

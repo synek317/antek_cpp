@@ -25,7 +25,7 @@
 		5023812217EBBCAC00990C9B /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5023811217EBBCAC00990C9B /* Icon-76.png */; };
 		5023812417EBBCAC00990C9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023811417EBBCAC00990C9B /* main.m */; };
 		5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5023811717EBBCAC00990C9B /* RootViewController.mm */; };
-		5023813317EBBCE400990C9B /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F293BB7E15EB831F00256477 /* AppDelegate.cpp */; };
+		5023813317EBBCE400990C9B /* app_delegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F293BB7E15EB831F00256477 /* app_delegate.cpp */; };
 		5023813717EBBCE400990C9B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF4C402178663F200122817 /* libz.dylib */; };
 		5023813E17EBBCE400990C9B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F293B3CC15EB7BE500256477 /* QuartzCore.framework */; };
 		5023814017EBBCE400990C9B /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F293B3D015EB7BE500256477 /* OpenAL.framework */; };
@@ -79,7 +79,7 @@
 		F293B3D515EB7BE500256477 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F293B3D415EB7BE500256477 /* AVFoundation.framework */; };
 		F293B3D915EB7BE500256477 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F293B3D815EB7BE500256477 /* Foundation.framework */; };
 		F293B3DB15EB7BE500256477 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F293B3DA15EB7BE500256477 /* CoreGraphics.framework */; };
-		F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F293BB7E15EB831F00256477 /* AppDelegate.cpp */; };
+		F293BB9C15EB831F00256477 /* app_delegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F293BB7E15EB831F00256477 /* app_delegate.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -279,8 +279,8 @@
 		F293B3D615EB7BE500256477 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F293B3D815EB7BE500256477 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F293B3DA15EB7BE500256477 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F293BB7E15EB831F00256477 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		F293BB7F15EB831F00256477 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
+		F293BB7E15EB831F00256477 /* app_delegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = app_delegate.cpp; path = ../Classes/app_delegate.cpp; sourceTree = "<group>"; };
+		F293BB7F15EB831F00256477 /* app_delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = app_delegate.h; path = ../Classes/app_delegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,8 +510,8 @@
 				9FB6C0551A69815100945236 /* ide-support */,
 				15427CE2198F237300DC375D /* lua_module_register.h */,
 				9FB5D7321A692CF0002361CA /* js_module_register.h */,
-				F293BB7E15EB831F00256477 /* AppDelegate.cpp */,
-				F293BB7F15EB831F00256477 /* AppDelegate.h */,
+				F293BB7E15EB831F00256477 /* app_delegate.cpp */,
+				F293BB7F15EB831F00256477 /* app_delegate.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -729,7 +729,7 @@
 				C07828FA18B4D72E00BD2287 /* SimulatorApp.mm in Sources */,
 				9FB6C0631A69815100945236 /* RuntimeJsImpl.cpp in Sources */,
 				9FB6C0611A69815100945236 /* lua_debugger.c in Sources */,
-				5023813317EBBCE400990C9B /* AppDelegate.cpp in Sources */,
+				5023813317EBBCE400990C9B /* app_delegate.cpp in Sources */,
 				9FD6FC731A5D2A820028EDC6 /* ConsoleWindowController.m in Sources */,
 				9FB6C0651A69815100945236 /* RuntimeLuaImpl.cpp in Sources */,
 				C07828F818B4D72E00BD2287 /* main.m in Sources */,
@@ -743,7 +743,7 @@
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				9FB6C0621A69815100945236 /* RuntimeJsImpl.cpp in Sources */,
 				9FB6C0601A69815100945236 /* lua_debugger.c in Sources */,
-				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
+				F293BB9C15EB831F00256477 /* app_delegate.cpp in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
 				9FB6C0641A69815100945236 /* RuntimeLuaImpl.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,

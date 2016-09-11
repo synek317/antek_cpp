@@ -16,7 +16,7 @@
     <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\app_delegate.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)App.xaml.cpp">
       <DependentUpon>$(MSBuildThisFileDirectory)App.xaml</DependentUpon>
@@ -26,7 +26,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml.cpp">
       <DependentUpon>$(MSBuildThisFileDirectory)OpenGLESPage.xaml</DependentUpon>
     </ClCompile>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\AppDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\app_delegate.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)App.xaml.h">
       <DependentUpon>$(MSBuildThisFileDirectory)App.xaml</DependentUpon>

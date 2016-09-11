@@ -5,7 +5,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)App.xaml.h" />
     <CLCompile Include="$(MSBuildThisFileDirectory)pch.cpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\AppDelegate.cpp">
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\app_delegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.cpp">
@@ -24,7 +24,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\AppDelegate.h">
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\app_delegate.h">
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.h">

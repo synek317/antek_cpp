@@ -3,7 +3,7 @@
 #include "stdafx.h"
 #include "Resource.h"
 #include "cocos2d.h"
-#include "AppDelegate.h"
+#include "app_delegate.h"
 #include "ProjectConfig/ProjectConfig.h"
 #include "ProjectConfig/SimulatorConfig.h"
 
@@ -32,7 +32,7 @@ protected:
     AppDelegate *_app;
     FILE *_writeDebugLogFile;
 
-    // 
+    //
     void setupUI();
     void setZoom(float frameScale);
     void updateWindowTitle();
